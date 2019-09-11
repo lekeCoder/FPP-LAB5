@@ -10,7 +10,14 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
-
+/**
+ * Purpose: Create a Java Program to count letters, reverse letters and remove duplicates 
+ * and output the result to an Output JTextField
+ * @author Adeola Adeleke
+ * Date: 09/10/2019
+ * Lab Number: 5
+ *
+ */
 public class Exercise_5_2 extends JFrame {
 
 	/**

@@ -18,7 +18,14 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
 import prog_5_3.gui.prog_3_2.Employee;
-
+/**
+ * Purpose: this program display the list of Employees and their accounts in the GUI. 
+ * Also added a check if any field is empty not to print out to console
+ * @author Adeola Adeleke
+ * Date: 09/10/2019
+ * Lab Number: 5
+ *
+ */
 
 
 public class UserIO extends JFrame  {
@@ -156,7 +163,7 @@ public class UserIO extends JFrame  {
 		public void actionPerformed(ActionEvent evt) {
 			String inputString = upperText.getText();
 			
-			// added this
+			// added by Adeola Adeleke
 			if(inputString.isBlank()) {
 				upperText.setText("");
 				return;
@@ -186,6 +193,9 @@ public class UserIO extends JFrame  {
 		}
 	}
 	
+	/**
+	 * added by Adeola Adeleke
+	 */
 	private void setUpData() {
 		emps = new Employee[3];
 		emps[0] = new Employee("Jim Daley", 2000, 9, 4);
@@ -208,7 +218,7 @@ public class UserIO extends JFrame  {
 				UserIO userIo = new UserIO();
 				userIo.setVisible(true);
 				//prepare employees
-				userIo.setUpData();
+				userIo.setUpData(); // added by Adeola Adeleke
 			}
 		});
 	}

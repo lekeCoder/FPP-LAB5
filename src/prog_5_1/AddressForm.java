@@ -17,7 +17,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 /**
- * Purpose: Complete an Address Form by adding state and zip fields. Also added a check if any field is empty not to print out to console
+ * Purpose: Complete an Address Form by adding state and zip fields. 
+ * Also added a check if any field is empty not to print out to console
  * @author Adeola Adeleke
  * Date: 09/10/2019
  * Lab Number: 5
@@ -171,14 +172,14 @@ public class AddressForm extends JFrame {
 		}
 	}
 	public static void centerFrameOnDesktop(Component f) {
-	        final int SHIFT_AMOUNT = 0;
-	        Toolkit toolkit = Toolkit.getDefaultToolkit();
-	        int height = toolkit.getScreenSize().height;
-	        int width  = toolkit.getScreenSize().width;
-	        int frameHeight = f.getSize().height;
-	        int frameWidth  = f.getSize().width;
-	        f.setLocation(((width-frameWidth)/2)-SHIFT_AMOUNT, (height-frameHeight)/3);    
-	    }
+        final int SHIFT_AMOUNT = 0;
+        Toolkit toolkit = Toolkit.getDefaultToolkit();
+        int height = toolkit.getScreenSize().height;
+        int width  = toolkit.getScreenSize().width;
+        int frameHeight = f.getSize().height;
+        int frameWidth  = f.getSize().width;
+        f.setLocation(((width-frameWidth)/2)-SHIFT_AMOUNT, (height-frameHeight)/3);    
+    }
 	
 	public static void main(String[] args){
 		AddressForm mf = new AddressForm();
